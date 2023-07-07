@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #E6E6FA;
+}
+
+h1{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #561f71;
+  margin-bottom: 0;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color:  #D8D8F9;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.gameInfo {
+  padding: 0 34px;
+  display: flex;
+  flex-direction: column;
+  /* font-family: 'Baloo Bhaina 2', cursive; */
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+    margin-top: 10px;
+  padding: 5px 20px;
+  background: #f3e7f9;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 950px) {
+
+  .gameContainer {
+    flex-wrap: wrap;
+    margin-top: 16vh;
+  }
+  .gameInfo {
+    margin-top: 20px;
+  }
+  .gameInfo h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+  }
+
+} 
+
