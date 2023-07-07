@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>The Impossible TicTacToe</h1>
+
+  <div class="gameContainer">
+    <div class="container">
+      <div class="box bt-0 bl-0" onclick="makeMove(0)"><span class="boxtext"></span></div>
+      <div class="box bt-0" onclick="makeMove(1)"><span class="boxtext"></span></div>
+      <div class="box bt-0 br-0" onclick="makeMove(2)"><span class="boxtext"></span></div>
+      <div class="box bl-0" onclick="makeMove(3)"><span class="boxtext"></span></div>
+      <div class="box" onclick="makeMove(4)"><span class="boxtext"></span></div>
+      <div class="box br-0" onclick="makeMove(5)"><span class="boxtext"></span></div>
+      <div class="box bl-0 bb-0" onclick="makeMove(6)"><span class="boxtext"></span></div>
+      <div class="box bb-0" onclick="makeMove(7)"><span class="boxtext"></span></div>
+      <div class="box bb-0 br-0" onclick="makeMove(8)"><span class="boxtext"></span></div>
+    </div>
+    <div class="gameInfo">
+        <div>
+            <span class="info" id="turnInfo">---Turn for X---</span>
+        </div>
+      <div>
+        <button id="reset" onclick="resetGame()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
